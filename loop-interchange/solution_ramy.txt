@@ -1,0 +1,18 @@
+[training089@r18c03 loop-interchange]$ icc   --std=c++11  -g -O2 -qopt-report  -qopenmp  laplacian.cpp -o laplacian_02
+icc: remark #10397: optimization reports are generated in *.optrpt files in the output location
+[training089@r18c03 loop-interchange]$ icc   --std=c++11  -g -O3 -qopt-report  -qopenmp  laplacian.cpp -o laplacian_03
+icc: remark #10397: optimization reports are generated in *.optrpt files in the output location
+[training089@r18c03 loop-interchange]$ ./laplacian_01
+Numerical solution 3.9980
+Analytical solution 4.0000
+Time 18.3803
+[training089@r18c03 loop-interchange]$ ./laplacian_02
+Numerical solution 3.9980
+Analytical solution 4.0000
+Time 19.1354
+[training089@r18c03 loop-interchange]$ ./laplacian_03
+Numerical solution 3.9980
+Analytical solution 4.0000
+Time  0.3798
+[training089@r18c03 loop-interchange]$ 
+
