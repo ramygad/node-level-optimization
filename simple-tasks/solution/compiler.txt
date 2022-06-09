@@ -1,0 +1,11 @@
+icc  -g -O2  -qopenmp tasks.c  -o tasks
+[training089@r18c04 solution]$ OMP_NUM_THREADS=2 ./tasks
+Array at the beginning: 0 0 0 0 
+Tasks created by 0
+Task 0 executed by thread 1
+Task 3 executed by thread 0
+Task 1 executed by thread 1
+Task 2 executed by thread 0
+Array at the end: 1 1 0 0 
+[training089@r18c04 solution]$ 
+
